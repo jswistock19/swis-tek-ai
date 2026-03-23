@@ -86,10 +86,10 @@
   <ul class="nav__links" role="list">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#ai-solutions">AI Solutions</a></li>
-    <li><a href="#consulting">Consulting</a></li>
-    <li><a href="#staffing">Staffing</a></li>
+    <li><a href="#services">Services <span style="font-size:10px;opacity:0.6;">▾</span></a></li>
+    <li><a href="#ai-solutions">AI Solutions <span style="font-size:10px;opacity:0.6;">▾</span></a></li>
+    <li><a href="#consulting">Consulting <span style="font-size:10px;opacity:0.6;">▾</span></a></li>
+    <li><a href="#staffing">Staffing <span style="font-size:10px;opacity:0.6;">▾</span></a></li>
     <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#resources">Resources</a></li>
     <li><a href="#invest">Invest</a></li>
@@ -116,6 +116,12 @@
   <a href="#invest" onclick="this.parentElement.classList.remove('open')">Invest</a>
   <a href="#contact" onclick="this.parentElement.classList.remove('open')" style="color:var(--color-gold)">Contact</a>
 </div>
+
+<!-- Sub-page content container -->
+<div id="sub-page-content" style="display:none;"></div>
+
+<!-- Main site content -->
+<div id="main-content">
 
 <!-- ============================================
      PAGE 1 — HOME / HERO
@@ -294,7 +300,7 @@
 
     <div class="card-grid card-grid--4 fade-in">
       <!-- S -->
-      <div class="card">
+      <a href="#/services/service" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">S</span>
         <div class="card__icon"><i data-lucide="briefcase"></i></div>
         <h3 class="card__title">Service</h3>
@@ -304,9 +310,9 @@
           <span class="card__tag">Compliance</span>
           <span class="card__tag">Setup</span>
         </div>
-      </div>
+      </a>
       <!-- W -->
-      <div class="card">
+      <a href="#/services/websites" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">W</span>
         <div class="card__icon"><i data-lucide="globe"></i></div>
         <h3 class="card__title">Websites</h3>
@@ -316,9 +322,9 @@
           <span class="card__tag">SEO</span>
           <span class="card__tag">Hosting</span>
         </div>
-      </div>
+      </a>
       <!-- I -->
-      <div class="card">
+      <a href="#/services/investment" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">I</span>
         <div class="card__icon"><i data-lucide="trending-up"></i></div>
         <h3 class="card__title">Investment</h3>
@@ -328,9 +334,9 @@
           <span class="card__tag">Equity</span>
           <span class="card__tag">Capital</span>
         </div>
-      </div>
+      </a>
       <!-- S -->
-      <div class="card">
+      <a href="#/services/staffing" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">S</span>
         <div class="card__icon"><i data-lucide="users"></i></div>
         <h3 class="card__title">Staffing</h3>
@@ -340,9 +346,9 @@
           <span class="card__tag">HR</span>
           <span class="card__tag">Workforce</span>
         </div>
-      </div>
+      </a>
       <!-- T -->
-      <div class="card">
+      <a href="#/services/technologies" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">T</span>
         <div class="card__icon card__icon--silver"><i data-lucide="cpu"></i></div>
         <h3 class="card__title">Technologies</h3>
@@ -352,9 +358,9 @@
           <span class="card__tag">Software</span>
           <span class="card__tag">Tech Stack</span>
         </div>
-      </div>
+      </a>
       <!-- O -->
-      <div class="card">
+      <a href="#/services/operations" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">O</span>
         <div class="card__icon card__icon--silver"><i data-lucide="settings"></i></div>
         <h3 class="card__title">Operations</h3>
@@ -364,9 +370,9 @@
           <span class="card__tag">Process</span>
           <span class="card__tag">Workflow</span>
         </div>
-      </div>
+      </a>
       <!-- C -->
-      <div class="card">
+      <a href="#/services/coaching" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">C</span>
         <div class="card__icon"><i data-lucide="award"></i></div>
         <h3 class="card__title">Coaching</h3>
@@ -376,9 +382,9 @@
           <span class="card__tag">AI</span>
           <span class="card__tag">Leadership</span>
         </div>
-      </div>
+      </a>
       <!-- K -->
-      <div class="card">
+      <a href="#/services/kpis" class="card" style="text-decoration:none;color:inherit;">
         <span class="card__letter">K</span>
         <div class="card__icon card__icon--silver"><i data-lucide="bar-chart-2"></i></div>
         <h3 class="card__title">KPIs</h3>
@@ -388,7 +394,7 @@
           <span class="card__tag">Dashboards</span>
           <span class="card__tag">Tracking</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -407,7 +413,7 @@
     </div>
 
     <div class="card-grid card-grid--2 fade-in">
-      <div class="card">
+      <a href="#/ai/education" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon card__icon--silver"><i data-lucide="graduation-cap"></i></div>
         <h3 class="card__title">AI Education &amp; Training</h3>
         <p class="card__desc">Hands-on workshops, intensive bootcamps, and corporate training programs that bring your team up to speed on AI fundamentals and advanced applications.</p>
@@ -416,8 +422,8 @@
           <span class="card__tag">Bootcamps</span>
           <span class="card__tag">Corporate</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a href="#/ai/integration" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon card__icon--silver"><i data-lucide="puzzle"></i></div>
         <h3 class="card__title">AI Integration</h3>
         <p class="card__desc">Seamlessly embed AI into your existing business systems — from CRM and ERP to customer service and internal tools. No rip-and-replace required.</p>
@@ -426,8 +432,8 @@
           <span class="card__tag">Automation</span>
           <span class="card__tag">APIs</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a href="#/ai/marketplace" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon"><i data-lucide="shopping-bag"></i></div>
         <h3 class="card__title">AI Tools Marketplace</h3>
         <p class="card__desc">A curated marketplace of vetted AI tools for small businesses — reviewed, tested, and recommended by our team for real-world performance.</p>
@@ -436,8 +442,8 @@
           <span class="card__tag">Vetted</span>
           <span class="card__tag">SMB-Ready</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a href="#/ai/custom" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon"><i data-lucide="wrench"></i></div>
         <h3 class="card__title">Custom AI Builds</h3>
         <p class="card__desc">Proprietary AI solutions built specifically for your business — custom models, chatbots, analytics engines, and intelligent automation tailored to your workflows.</p>
@@ -446,7 +452,7 @@
           <span class="card__tag">Chatbots</span>
           <span class="card__tag">Automation</span>
         </div>
-      </div>
+      </a>
     </div>
 
     <div style="text-align:center;margin-top:var(--space-10);" class="fade-in">
@@ -469,48 +475,48 @@
     </div>
 
     <div class="service-list fade-in" style="max-width:800px;margin:0 auto;">
-      <div class="service-list__item">
+      <a href="#/consulting/launch" class="service-list__item" style="text-decoration:none;color:inherit;">
         <div class="service-list__icon"><i data-lucide="rocket"></i></div>
         <div class="service-list__content">
           <h3 class="service-list__title">Business Launch</h3>
           <p class="service-list__desc">Start-to-finish business setup — entity formation, licensing, initial operations, and launch strategy.</p>
         </div>
-      </div>
-      <div class="service-list__item">
+      </a>
+      <a href="#/consulting/gtm" class="service-list__item" style="text-decoration:none;color:inherit;">
         <div class="service-list__icon"><i data-lucide="map"></i></div>
         <div class="service-list__content">
           <h3 class="service-list__title">Go-To-Market Strategy</h3>
           <p class="service-list__desc">Market entry planning, competitive positioning, and customer acquisition frameworks for new products and markets.</p>
         </div>
-      </div>
-      <div class="service-list__item">
+      </a>
+      <a href="#/consulting/sales" class="service-list__item" style="text-decoration:none;color:inherit;">
         <div class="service-list__icon"><i data-lucide="dollar-sign"></i></div>
         <div class="service-list__content">
           <h3 class="service-list__title">Sales Strategy</h3>
           <p class="service-list__desc">Pipeline development, CRM optimization, and conversion rate improvement across your entire sales funnel.</p>
         </div>
-      </div>
-      <div class="service-list__item">
+      </a>
+      <a href="#/consulting/brand" class="service-list__item" style="text-decoration:none;color:inherit;">
         <div class="service-list__icon"><i data-lucide="palette"></i></div>
         <div class="service-list__content">
           <h3 class="service-list__title">Brand Development</h3>
           <p class="service-list__desc">Identity design, messaging architecture, and market positioning that resonates with your target audience.</p>
         </div>
-      </div>
-      <div class="service-list__item">
+      </a>
+      <a href="#/consulting/succession" class="service-list__item" style="text-decoration:none;color:inherit;">
         <div class="service-list__icon"><i data-lucide="shield"></i></div>
         <div class="service-list__content">
           <h3 class="service-list__title">Succession &amp; Estate Planning</h3>
           <p class="service-list__desc">Business continuity planning, leadership transition, and estate structuring for long-term stability.</p>
         </div>
-      </div>
-      <div class="service-list__item">
+      </a>
+      <a href="#/consulting/expansion" class="service-list__item" style="text-decoration:none;color:inherit;">
         <div class="service-list__icon"><i data-lucide="git-branch"></i></div>
         <div class="service-list__content">
           <h3 class="service-list__title">Expansion Planning</h3>
           <p class="service-list__desc">Multi-location scaling, new market analysis, and operational frameworks for geographic growth.</p>
         </div>
-      </div>
+      </a>
     </div>
 
     <div style="text-align:center;margin-top:var(--space-10);" class="fade-in">
@@ -533,7 +539,7 @@
     </div>
 
     <div class="card-grid card-grid--2 fade-in">
-      <div class="card">
+      <a href="#/staffing/healthcare" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon"><i data-lucide="heart-pulse"></i></div>
         <h3 class="card__title">Healthcare Staffing</h3>
         <p class="card__desc">Physical therapists, registered nurses, home health aides, and allied health professionals placed where they're needed most.</p>
@@ -542,8 +548,8 @@
           <span class="card__tag">RN</span>
           <span class="card__tag">Home Health</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a href="#/staffing/tech" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon card__icon--silver"><i data-lucide="code-2"></i></div>
         <h3 class="card__title">Tech Staffing</h3>
         <p class="card__desc">Software developers, AI/ML specialists, data engineers, and DevOps professionals for your technology initiatives.</p>
@@ -552,8 +558,8 @@
           <span class="card__tag">AI Specialists</span>
           <span class="card__tag">Data</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a href="#/staffing/executive" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon"><i data-lucide="crown"></i></div>
         <h3 class="card__title">Executive Placement</h3>
         <p class="card__desc">C-suite and senior leadership recruitment — finding the strategic minds to lead your organization's next phase of growth.</p>
@@ -562,8 +568,8 @@
           <span class="card__tag">VP</span>
           <span class="card__tag">Directors</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a href="#/staffing/temp" class="card" style="text-decoration:none;color:inherit;">
         <div class="card__icon card__icon--silver"><i data-lucide="clock"></i></div>
         <h3 class="card__title">Temp-to-Hire</h3>
         <p class="card__desc">Flexible staffing solutions that let you evaluate talent on the job before making a permanent commitment.</p>
@@ -572,7 +578,7 @@
           <span class="card__tag">Trial Period</span>
           <span class="card__tag">Low Risk</span>
         </div>
-      </div>
+      </a>
     </div>
 
     <div style="text-align:center;margin-top:var(--space-10);display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;" class="fade-in">
@@ -716,26 +722,26 @@
     </div>
 
     <div class="resource-grid fade-in">
-      <div class="resource-card">
+      <a href="#/resources/blog" class="resource-card" style="text-decoration:none;color:inherit;">
         <div class="resource-card__icon resource-card__icon--gold"><i data-lucide="pen-tool"></i></div>
         <h3 class="resource-card__title">Blog</h3>
         <p class="resource-card__desc">AI trends, business tips, Kentucky business news, and deep dives into technology strategy.</p>
-      </div>
-      <div class="resource-card">
+      </a>
+      <a href="#/resources/tools" class="resource-card" style="text-decoration:none;color:inherit;">
         <div class="resource-card__icon resource-card__icon--silver"><i data-lucide="calculator"></i></div>
         <h3 class="resource-card__title">Free Tools</h3>
         <p class="resource-card__desc">KPI calculators, business plan templates, financial models, and operational checklists — all free.</p>
-      </div>
-      <div class="resource-card">
+      </a>
+      <a href="#/resources/grants" class="resource-card" style="text-decoration:none;color:inherit;">
         <div class="resource-card__icon resource-card__icon--green"><i data-lucide="database"></i></div>
         <h3 class="resource-card__title">Grant Database</h3>
         <p class="resource-card__desc">Searchable database of federal and state funding opportunities — NSF, SBIR, healthcare grants, and more.</p>
-      </div>
-      <div class="resource-card">
+      </a>
+      <a href="#/resources/ai-hub" class="resource-card" style="text-decoration:none;color:inherit;">
         <div class="resource-card__icon resource-card__icon--white"><i data-lucide="book-open"></i></div>
         <h3 class="resource-card__title">AI Learning Hub</h3>
         <p class="resource-card__desc">Free introductory courses and tutorials on AI fundamentals, prompt engineering, and business automation.</p>
-      </div>
+      </a>
     </div>
 
     <!-- Newsletter -->
@@ -764,18 +770,18 @@
     </div>
 
     <div class="invest-grid fade-in">
-      <div class="invest-card">
+      <a href="#/invest/opportunities" class="invest-card" style="text-decoration:none;color:inherit;display:block;">
         <div class="invest-card__icon invest-card__icon--gold"><i data-lucide="gem"></i></div>
         <h3 class="invest-card__title">Invest With Us</h3>
         <p class="invest-card__desc">Explore equity opportunities across our portfolio of healthcare, technology, and sustainability ventures. Structured offerings with transparent terms and proven traction.</p>
-        <a href="#contact" class="btn btn--primary">Investment Overview <span class="arrow">→</span></a>
-      </div>
-      <div class="invest-card">
+        <span class="btn btn--primary">Investment Overview <span class="arrow">→</span></span>
+      </a>
+      <a href="#/invest/partners" class="invest-card" style="text-decoration:none;color:inherit;display:block;">
         <div class="invest-card__icon invest-card__icon--silver"><i data-lucide="handshake"></i></div>
         <h3 class="invest-card__title">Become a Partner</h3>
         <p class="invest-card__desc">Referral, reseller, and co-venture partnership programs. International inquiries welcome — we're actively building our network across France, Switzerland, and beyond.</p>
-        <a href="#contact" class="btn btn--white">Partner Program <span class="arrow">→</span></a>
-      </div>
+        <span class="btn btn--white">Partner Program <span class="arrow">→</span></span>
+      </a>
     </div>
 
     <!-- Partnership types -->
@@ -897,6 +903,8 @@
   </div>
 </section>
 
+</div><!-- /main-content -->
+
 <!-- ============================================
      FOOTER
      ============================================ -->
@@ -942,10 +950,10 @@
     <div>
       <h4 class="footer__col-title">Resources</h4>
       <ul class="footer__col-links" role="list">
-        <li><a href="#resources">Blog</a></li>
-        <li><a href="#resources">Free Tools</a></li>
-        <li><a href="#resources">Grant Database</a></li>
-        <li><a href="#resources">AI Learning Hub</a></li>
+        <li><a href="#/resources/blog">Blog</a></li>
+        <li><a href="#/resources/tools">Free Tools</a></li>
+        <li><a href="#/resources/grants">Grant Database</a></li>
+        <li><a href="#/resources/ai-hub">AI Learning Hub</a></li>
       </ul>
     </div>
   </div>
@@ -1101,6 +1109,8 @@ if (statsBar) statsObserver.observe(statsBar);
   animate();
 })();
 </script>
+
+<script src="./app.js"></script>
 
 </body>
 </html>
