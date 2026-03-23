@@ -1,6 +1,6 @@
 /* ============================================
    SWIS TEK AI — Design Tokens & Components
-   Dark premium tech aesthetic — Black/Gold/Electric Blue
+   Dark premium tech aesthetic — Black & Gold (Steelers)
    Inspired by Real-PT.com + Top AI Consultancies
    ============================================ */
 
@@ -38,25 +38,25 @@
   --font-display: 'Cabinet Grotesk', 'Helvetica Neue', sans-serif;
   --font-body: 'Satoshi', 'Inter', sans-serif;
 
-  /* Colors — Dark Premium Tech */
-  --color-bg:             #0a0a0f;
-  --color-surface:        #111118;
-  --color-surface-2:      #16161f;
-  --color-surface-3:      #1c1c28;
+  /* Colors — Steelers Dark Premium (Black & Gold) */
+  --color-bg:             #0a0a0a;
+  --color-surface:        #111111;
+  --color-surface-2:      #181818;
+  --color-surface-3:      #1f1f1f;
   --color-border:         rgba(255,255,255,0.08);
   --color-border-hover:   rgba(255,255,255,0.15);
-  --color-text:           #f0eff4;
-  --color-text-muted:     #9896a3;
-  --color-text-faint:     #5d5b6a;
-  --color-gold:           #d4a843;
-  --color-gold-bright:    #f0c75e;
-  --color-gold-dim:       #9a7a2f;
-  --color-primary:        #00a3ff;
-  --color-primary-dim:    #0077cc;
-  --color-primary-glow:   rgba(0,163,255,0.15);
-  --color-accent-purple:  #7c5cfc;
-  --color-success:        #34d399;
-  --color-error:          #f87171;
+  --color-text:           #f5f5f0;
+  --color-text-muted:     #a09d93;
+  --color-text-faint:     #605d55;
+  --color-gold:           #ffb612;
+  --color-gold-bright:    #ffc940;
+  --color-gold-dim:       #c48e00;
+  --color-primary:        #ffb612;
+  --color-primary-dim:    #c48e00;
+  --color-primary-glow:   rgba(255,182,18,0.15);
+  --color-accent-silver:  #c0c0c0;
+  --color-success:        #6abf4b;
+  --color-error:          #e04040;
 
   /* Radius */
   --radius-sm: 0.375rem;
@@ -75,8 +75,8 @@
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
   --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
-  --shadow-glow-gold: 0 0 40px rgba(212,168,67,0.15);
-  --shadow-glow-blue: 0 0 40px rgba(0,163,255,0.15);
+  --shadow-glow-gold: 0 0 40px rgba(255,182,18,0.2);
+  --shadow-glow-silver: 0 0 40px rgba(192,192,192,0.1);
 
   /* Content widths */
   --content-narrow: 640px;
@@ -276,9 +276,9 @@ a:hover { color: var(--color-gold-bright); }
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse at 30% 20%, rgba(0,163,255,0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 80%, rgba(212,168,67,0.06) 0%, transparent 50%),
-    linear-gradient(180deg, rgba(10,10,15,0.3) 0%, rgba(10,10,15,0.7) 100%);
+    radial-gradient(ellipse at 30% 20%, rgba(255,182,18,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(192,192,192,0.04) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.7) 100%);
   z-index: 1;
 }
 .hero__content {
@@ -298,9 +298,9 @@ a:hover { color: var(--color-gold-bright); }
   letter-spacing: 0.2em;
   margin-bottom: var(--space-6);
   padding: var(--space-2) var(--space-4);
-  border: 1px solid rgba(212,168,67,0.3);
+  border: 1px solid rgba(255,182,18,0.3);
   border-radius: var(--radius-full);
-  background: rgba(212,168,67,0.05);
+  background: rgba(255,182,18,0.05);
 }
 .hero__eyebrow .dot {
   width: 6px; height: 6px;
@@ -322,7 +322,7 @@ a:hover { color: var(--color-gold-bright); }
   margin-bottom: var(--space-6);
 }
 .hero__title .gradient-text {
-  background: linear-gradient(135deg, var(--color-gold-bright) 0%, var(--color-primary) 50%, var(--color-accent-purple) 100%);
+  background: linear-gradient(135deg, var(--color-gold-bright) 0%, var(--color-gold) 40%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -381,14 +381,14 @@ a:hover { color: var(--color-gold-bright); }
   color: var(--color-gold);
   transform: translateY(-2px);
 }
-.btn--blue {
-  background: var(--color-primary);
-  color: #fff;
+.btn--white {
+  background: #fff;
+  color: #0a0a0a;
 }
-.btn--blue:hover {
-  background: #1ab2ff;
-  color: #fff;
-  box-shadow: var(--shadow-glow-blue);
+.btn--white:hover {
+  background: var(--color-gold-bright);
+  color: #0a0a0a;
+  box-shadow: var(--shadow-glow-gold);
   transform: translateY(-2px);
 }
 
@@ -471,7 +471,7 @@ a:hover { color: var(--color-gold-bright); }
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
-  background: rgba(212,168,67,0.1);
+  background: rgba(255,182,18,0.1);
   color: var(--color-gold);
   font-size: 1.1rem;
 }
@@ -551,14 +551,14 @@ a:hover { color: var(--color-gold-bright); }
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-lg);
-  background: rgba(212,168,67,0.1);
+  background: rgba(255,182,18,0.1);
   color: var(--color-gold);
   font-size: 1.25rem;
   margin-bottom: var(--space-5);
 }
-.card__icon--blue {
-  background: rgba(0,163,255,0.1);
-  color: var(--color-primary);
+.card__icon--silver {
+  background: rgba(192,192,192,0.1);
+  color: var(--color-accent-silver);
 }
 
 .card__letter {
@@ -603,15 +603,61 @@ a:hover { color: var(--color-gold-bright); }
 .card--portfolio {
   padding: 0;
   overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: inherit;
 }
+.card--portfolio:hover { color: inherit; }
 .card--portfolio .card__visual {
-  height: 200px;
+  height: 220px;
   background: var(--color-surface-2);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+.card--portfolio .card__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.6s var(--ease-out), filter 0.3s var(--ease-out);
+}
+.card--portfolio:hover .card__visual img {
+  transform: scale(1.05);
+}
+.card--portfolio .card__visual .card__visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10,10,15,0.7) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: var(--space-4);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out);
+}
+.card--portfolio:hover .card__visual .card__visual-overlay {
+  opacity: 1;
+}
+.card__visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255,182,18,0.9);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-interactive);
+}
+.card--portfolio:hover .card__visit-btn {
+  background: var(--color-gold);
+  color: #0a0a0f;
 }
 .card--portfolio .card__visual .card__visual-label {
   font-family: var(--font-display);
@@ -624,6 +670,21 @@ a:hover { color: var(--color-gold-bright); }
 .card--portfolio .card__body {
   padding: var(--space-6);
 }
+.card__link-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-3);
+}
+.card__url {
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  transition: color var(--transition-interactive);
+}
+.card--portfolio:hover .card__url { color: var(--color-gold-bright); }
 
 /* ============================================
    TIMELINE
@@ -658,7 +719,7 @@ a:hover { color: var(--color-gold-bright); }
   border-radius: 50%;
   background: var(--color-gold);
   border: 2px solid var(--color-bg);
-  box-shadow: 0 0 0 3px rgba(212,168,67,0.3);
+  box-shadow: 0 0 0 3px rgba(255,182,18,0.3);
 }
 .timeline__year {
   font-family: var(--font-display);
@@ -733,8 +794,8 @@ a:hover { color: var(--color-gold-bright); }
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(0,163,255,0.15), rgba(124,92,252,0.1));
-  color: var(--color-primary);
+  background: linear-gradient(135deg, rgba(255,182,18,0.12), rgba(192,192,192,0.08));
+  color: var(--color-gold);
   font-size: 1.2rem;
   flex-shrink: 0;
 }
@@ -770,8 +831,8 @@ a:hover { color: var(--color-gold-bright); }
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse at 50% 0%, rgba(212,168,67,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 50% 100%, rgba(0,163,255,0.06) 0%, transparent 60%);
+    radial-gradient(ellipse at 50% 0%, rgba(255,182,18,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(192,192,192,0.04) 0%, transparent 60%);
   pointer-events: none;
 }
 .cta-block__title {
@@ -821,9 +882,9 @@ a:hover { color: var(--color-gold-bright); }
   margin-bottom: var(--space-4);
   font-size: 1.1rem;
 }
-.resource-card__icon--gold { background: rgba(212,168,67,0.1); color: var(--color-gold); }
-.resource-card__icon--blue { background: rgba(0,163,255,0.1); color: var(--color-primary); }
-.resource-card__icon--purple { background: rgba(124,92,252,0.1); color: var(--color-accent-purple); }
+.resource-card__icon--gold { background: rgba(255,182,18,0.1); color: var(--color-gold); }
+.resource-card__icon--silver { background: rgba(192,192,192,0.1); color: var(--color-accent-silver); }
+.resource-card__icon--white { background: rgba(255,255,255,0.08); color: #fff; }
 .resource-card__icon--green { background: rgba(52,211,153,0.1); color: var(--color-success); }
 .resource-card__title {
   font-family: var(--font-display);
@@ -928,7 +989,7 @@ a:hover { color: var(--color-gold-bright); }
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-lg);
-  background: rgba(212,168,67,0.1);
+  background: rgba(255,182,18,0.1);
   color: var(--color-gold);
   font-size: 1.1rem;
   flex-shrink: 0;
@@ -1000,7 +1061,7 @@ a:hover { color: var(--color-gold-bright); }
 .footer__social a:hover {
   border-color: var(--color-gold);
   color: var(--color-gold);
-  background: rgba(212,168,67,0.05);
+  background: rgba(255,182,18,0.05);
 }
 
 .footer__col-title {
@@ -1122,12 +1183,12 @@ a:hover { color: var(--color-gold-bright); }
   font-size: 1.5rem;
 }
 .invest-card__icon--gold {
-  background: rgba(212,168,67,0.1);
+  background: rgba(255,182,18,0.1);
   color: var(--color-gold);
 }
-.invest-card__icon--blue {
-  background: rgba(0,163,255,0.1);
-  color: var(--color-primary);
+.invest-card__icon--silver {
+  background: rgba(192,192,192,0.1);
+  color: var(--color-accent-silver);
 }
 .invest-card__title {
   font-family: var(--font-display);
