@@ -1,7 +1,7 @@
 /* ============================================
-   SWIS TEK AI — Design Tokens & Components
+   RealAI.dev — Design Tokens & Components
    Dark premium tech aesthetic — Black & Gold (Steelers)
-   Inspired by Real-PT.com + Top AI Consultancies
+   AI Web Development & Infrastructure Agency
    ============================================ */
 
 /* --- FONTS --- */
@@ -541,7 +541,7 @@ a:hover { color: var(--color-gold-bright); }
 .card:hover {
   border-color: var(--color-border-hover);
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg), 0 0 40px rgba(0,163,255,0.05);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(255,182,18,0.05);
 }
 .card:hover::before { opacity: 1; }
 
