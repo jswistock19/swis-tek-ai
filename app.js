@@ -248,7 +248,7 @@
         <div class="pricing-grid">
           <div class="pricing-card">
             <div class="pricing-card__name">Launch</div>
-            <div class="pricing-card__price"><span style="font-size:12px;font-weight:500;color:var(--color-text-muted,#999);display:block;margin-bottom:2px;">Starting at</span>$1,500</div>
+            <div class="pricing-card__price"><span style="font-size:12px;font-weight:500;color:var(--color-text-muted,#999);display:block;margin-bottom:2px;">Starting at</span>$900</div>
             <ul class="pricing-card__features">
               <li>5-page responsive site</li>
               <li>Mobile-optimized</li>
